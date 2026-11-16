@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leading Organizations Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f6f7;--card:#fff;--ink:#16232b;--mut:#5b6b75;--line:#d5dee3;--acc:#0f766e;--accbg:#d9f0ec;--tip:#9a4a07;--tipbg:#fbeedd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a20;--card:#17262e;--ink:#e6eef1;--mut:#9fb1ba;--line:#2b3f49;--acc:#5fd3c4;--accbg:#173c3a;--tip:#f0b673;--tipbg:#33281a}}
+:root[data-theme="dark"]{--bg:#0f1a20;--card:#17262e;--ink:#e6eef1;--mut:#9fb1ba;--line:#2b3f49;--acc:#5fd3c4;--accbg:#173c3a;--tip:#f0b673;--tipbg:#33281a}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+header{padding:28px 20px 12px;max-width:1040px;margin:0 auto}
+h1{font:700 clamp(28px,5vw,42px)/1.1 Newsreader,Georgia,serif;margin:0 0 6px}
+header p{margin:0;color:var(--mut);max-width:60ch}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar div{max-width:1040px;margin:0 auto;padding:10px 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input[type=search]{flex:1 1 180px;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit}
+button{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer}
+button[aria-pressed=true]{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:16px 20px 60px;display:grid;grid-template-columns:230px 1fr;gap:28px}
+nav{position:sticky;top:70px;align-self:start;display:flex;flex-direction:column;gap:4px}
+nav a{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:14px}
+nav a:hover{background:var(--accbg)}
+nav small{color:var(--mut)}
+section{margin-bottom:36px}
+section>h2{font:700 26px/1.2 Newsreader,Georgia,serif;margin:0 0 2px}
+.pg{color:var(--mut);font-size:13px;margin:0 0 12px}
+.g{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 16px 10px;margin-bottom:12px}
+.g h3{font-size:15px;color:var(--acc);margin:12px 0 4px}
+.r{display:grid;grid-template-columns:minmax(120px,190px) 1fr auto;gap:4px 14px;padding:8px 0;border-top:1px solid var(--line);align-items:start}
+.r:first-of-type{border-top:0}
+.r b{font-weight:600}
+.r span{cursor:default}
+.hide .r:not(.show) span{filter:blur(6px);cursor:pointer;user-select:none}
+.r label{font-size:13px;color:var(--mut);white-space:nowrap}
+.r.done b{color:var(--acc)}
+.tip{background:var(--tipbg);color:var(--tip);border-radius:8px;padding:8px 12px;margin:8px 0 4px;font-size:14px}
+.empty{color:var(--mut);padding:20px 0}
+@media(max-width:760px){.wrap{grid-template-columns:1fr}nav{position:static;flex-direction:row;overflow-x:auto}nav a{white-space:nowrap}.r{grid-template-columns:1fr auto}.r b{grid-column:1/-1}}
+@media print{.bar,nav{display:none}.wrap{display:block}.hide .r span{filter:none!important}}
+</style>
+</head>
+<body>
+<header>
+<h1>Leading Organizations</h1>
+<p>Study guide for the Leading Organizations section (course book pp. 70–98). Switch on quiz mode to hide definitions, tap a row to reveal it, and tick what you know.</p>
+</header>
+<div class="bar"><div>
+<input type="search" id="q" placeholder="Search terms and definitions" aria-label="Search">
+<button id="quiz" aria-pressed="false">Quiz mode</button>
+<button id="reset">Clear checks</button>
+<span id="prog" style="color:var(--mut);font-size:14px"></span>
+</div></div>
+<div class="wrap"><nav id="nav" aria-label="Topics"></nav><main id="main"></main></div>
+<script>
+var D=[
+{t:"Cultural Intelligence",p:"70–74",g:[
+["Core ideas",[
+["Culture","The values, norms, and customs a group of people share."],
+["Cultural intelligence (CQ)","An outsider’s ability to interpret unfamiliar, ambiguous gestures the way the person’s compatriots would."],
+["Cognitive CQ","Knowledge about another culture that helps you interpret others correctly."],
+["Metacognitive CQ","Awareness of how culture affects interactions, and the ability to strategize accordingly."],
+["Behavioral CQ","Ability to mimic another culture so others interpret you correctly."],
+["Motivational CQ","Emotional resilience and desire to adapt to another culture."],
+["CQ goals","Become aware of your own cultural biases; respect and value differences; adapt to accommodate them."],
+["Culture shock","Four phases: honeymoon, frustration, adjustment, acceptance."],
+["Leading across cultures","Create a unique team culture: state group norms, explain your reasoning, acknowledge why it may feel strange. For conflict: look for cultural explanations, change the group structure, or as a last resort remove problem members."]]],
+["Hofstede’s dimensions",[
+["Power distance","High: lower-status members accept unequal power. Low: they do not."],
+["Uncertainty avoidance","High: uncomfortable with ambiguity. Low: more tolerant of it."],
+["Individualism vs. collectivism","Loose ties and self-reliance vs. a tightly knit society with loyalty to extended family and ingroups."],
+["Masculinity vs. femininity","Competition, achievement, assertiveness vs. cooperation, consensus, quality of life."],
+["Long-term vs. short-term orientation","Pragmatic: adaptability, education, thrift. Normative: past and present, tradition, change unwelcome."],
+["Indulgence vs. restraint","Values fun and gratification vs. strict norms controlling desires."]]],
+["Meyer’s dimensions",[
+["Consensus vs. top-down decisions","Decide only when everyone agrees vs. everyone supports the leader’s decision regardless of opinion."],
+["decisions vs. Decisions","Little d: quick, keeps adapting. Big D: painstakingly planned, final."],
+["Applications-first vs. principles-first","Actionable how-it-works first vs. method and general theory first, then apply."],
+["Specific vs. holistic thinking","Analyze by isolating from the environment vs. always consider broader connections."],
+["Relationship vs. task-based trust","Trust built on personal relationships vs. on demonstrated competence and efficiency."],
+["Confrontational vs. nonconfrontational","Direct feedback with “upgraders” (very, extremely) vs. criticism sandwiched in praise with “downgraders” (somewhat, a little)."]]],
+["Hall’s dimensions",[
+["Monochronic vs. polychronic","Time is absolute, one task at a time vs. flexible, several tasks at once."],
+["Low vs. high context","Meaning is in the words vs. much is conveyed without words."],
+["Territoriality","Low: shares easily, often high-context. High: concerned with boundaries and ownership, often low-context."]]]]},
+
+{t:"Groups and Teams",p:"75–77",g:[
+["Groups",[
+["Group","Two or more people who share norms and goals and have a common identity."],
+["Tuckman’s stages","Forming, storming, norming, performing, adjourning."],
+["Forming / Storming","Getting to know each other and the task / testing limits of the leader and others."],
+["Norming / Performing","Norms, procedures, roles set / group solves problems and achieves goals."],
+["Task roles","Help define and pursue goals: initiator, coordinator, recorder."],
+["Maintenance roles","Build constructive relationships: harmonizer (mediates conflict), gatekeeper (encourages participation)."],
+["Role ambiguity / conflict / overload","Unclear expectations / incompatible roles / role too demanding."],
+["Norms","Shared attitudes that guide behavior across situations."],
+["Asch effect","Going along with the group’s opinion regardless of your own."],
+["Groupthink","Unwillingness to critically evaluate favored ideas in order to preserve harmony."],
+["Social loafing","Exerting less effort in a group; one reason groups underperform the sum of individuals."]]],
+["Teams",[
+["Team","A group whose members hold themselves mutually accountable for a common purpose, goals, and approach."],
+["Team characteristics","High cohesiveness, shared rewards, interdependence, collective work products, shared participatory leadership."],
+["Task types","Production (make something), idea-generation (brainstorm), problem-solving (action plans and decisions)."],
+["Pooled interdependence","Lowest: separate contributions to a common output."],
+["Sequential interdependence","One member’s output is another’s input."],
+["Reciprocal interdependence","Highest: members work together on inputs."],
+["Team types","Advice (recommend), production (day-to-day output), project (creative problem-solving), action (specialized, on demand); self-managed teams run themselves."],
+["Virtual team","Geographically separate, meets online; flexible but harder for bonding and trust."],
+["Boundary-spanning roles","Connect the team to the larger organization."]]],
+["Effective teamwork",[
+["Four components","Cohesiveness, cooperation, communication, trust."],
+["Socio-emotional vs. instrumental cohesiveness","Stick together because they enjoy each other vs. because they depend on each other to get the job done."],
+["Communication","The most important predictor of success; how members communicate matters more than what. Best teams: valuable interactions outside meetings, equal communication among all members."],
+["Interaction ranking","1 face-to-face, 2 phone or video, 3 email or text."],
+["Trust builders","Communication, support, respect, fairness, predictability, competence."]]]]},
+
+{t:"Organizational Structure and Culture",p:"78–82",g:[
+["Structure",[
+["Functional structure","Activities grouped by specialized skill."],
+["Divisional structure","Organized by customer region, service, or product."],
+["SOP","Standard operating procedure: step-by-step instructions for tasks."],
+["Formalization / centralization","How far rules govern employees / how concentrated decision authority is at the top."],
+["Span of control","Number of employees reporting to one manager. Tall = small span; flat = large span."],
+["Matrix organization","Blends functional and divisional; pools people from departments into project or product teams."],
+["Boundaryless organizations","Modular (no boundaries with suppliers), strategic alliances (competitors collaborate), self-managing teams."],
+["Learning organization","Institutionalizes creating, acquiring, and transferring knowledge."],
+["Virtual organization","Network of independent contractors or organizations linked by technology."],
+["Differentiation vs. integration","Division of labor creating different specialist perspectives vs. coordinating specialists toward a common goal. Too much differentiation causes inefficiency and conflict."],
+["Mechanistic vs. organic","Highly formalized and centralized, rigid bureaucracy (McDonald’s) vs. flexible, low formalization (3M)."]]],
+["Change",[
+["External forces for change","Workforce demographics, technology, market conditions, globalization, social values."],
+["Effectiveness criteria","Goal accomplishment, resource acquisition, internal processes, strategic constituencies satisfaction."],
+["Organizational decline","A shrinking resource base: money, customers, talent, innovations."],
+["Resistance to change","Doubts about capability, worry over status or job security. Employees accept change if benefits outweigh personal costs."],
+["Lewin’s model","Unfreeze (get ready), change (execute), refreeze (reinforce until it is the norm)."],
+["Kotter’s 8 steps","Unfreeze: 1 urgency, 2 coalition, 3 vision, 4 communicate plan. Change: 5 eliminate obstacles, 6 small wins, 7 build on change. Refreeze: 8 make it part of culture."]]],
+["Culture",[
+["Organizational identity","Shared values and beliefs that guide behavior and tell members what the company stands for."],
+["Three layers","Artifacts (visible: layout, symbols, traditions), values (espoused by management vs. enacted by employees), basic assumptions (taken for granted)."],
+["Competing values framework","Axes: internal vs. external focus, flexibility vs. stability. Clan (collaborate), adhocracy (create), market (compete), hierarchy (control)."],
+["Clan / adhocracy","Family-like, invests in people / innovative, adapts fast."],
+["Market / hierarchy","Results by any means / formal, standardized, optimized processes."],
+["Organizational culture profile (OCP)","Used before culture change or merger. Seven values: stable, innovative, aggressive, outcome-oriented, people-oriented, team-oriented, detail-oriented."],
+["Service / safety cultures","Empower and cross-train to serve customers / raise morale and retention."],
+["Creating culture","Founder values and industry demands shape early values, goals, assumptions."],
+["Maintaining culture","Attraction-selection-attrition, onboarding, leaders modeling behavior, reward systems."]]]]},
+
+{t:"Corporate Governance",p:"83–87",g:[
+["Purpose and agency",[
+["Corporate governance","The system by which corporations are directed and controlled."],
+["Shareholder vs. stakeholder view","Maximize shareholder value (North America, UK, Australia) vs. balance all stakeholders’ interests (Europe, Asia)."],
+["Agency problem / costs","Agents act in their own interest instead of their principals’; agency costs are what that causes."],
+["Stock options","Right to buy at a fixed price. Aligns with shareholders; encourages backdating and short-term focus."],
+["High salary","Attracts and retains talent; costly and not equitable to employees."],
+["Bonuses","Motivate hitting targets; targets may be hit at expense of long-term value."],
+["Other pay terms","Perquisites (amenities), restricted shares (not transferable until conditions met), proxy statement, say-on-pay (shareholder vote on exec and director pay)."],
+["Self-interested behaviors","Bankruptcy, Foreign Corrupt Practices Act violations, financial restatement, stock option backdating."]]],
+["The board",[
+["Board of directors","Elected or appointed group that oversees the organization."],
+["Chair / lead independent director","Chair is the most powerful member and links board to management; the lead independent director is a check on the chair-CEO."],
+["Director types","Inside (employees, former employees, family), gray (indirect business ties), independent/outside (no material ties), advisory (not elected, no vote), professional (full-time board careers)."],
+["Written consent / executive session","Actions circulated and approved in writing / outside directors meet without insiders."],
+["Staggered boards","Directors serve two- or three-year terms."],
+["Fiduciary duty","Care (best judgment), loyalty (company first in a conflict), candor (keep shareholders informed)."],
+["Causal business model / KPIs","How metrics determine long-term strategy effectiveness / financial and nonfinancial performance metrics."]]],
+["CEO and checks",[
+["CEO pay and profile","Benchmarking uses pay at comparable firms. Skills-and-experience profile is forward-looking and tied to strategy."],
+["Succession models","External candidate; president/COO (promote and test); horse race (compare several insiders); inside-outside (groom insiders, still search externally)."],
+["SOX / Dodd-Frank / SEC","Protects shareholders from corporate fraud / regulates financial industry, protects consumers / enforces securities laws."],
+["Shareholder tools","Whistleblower, proxy contest (own board nominees), dual-class shares, shareholder resolutions (voted at annual meetings)."]]],
+["International",[
+["Comply or explain","Commonwealth public companies need not follow governance codes but must explain noncompliance."],
+["Two-tiered boards","Management board (tactical decisions) and supervisory board (appoints and oversees, approves major decisions)."],
+["Keiretsu","Japan: bank-centered; co-ownership and fixed pricing link manufacturers and suppliers, limiting outside oversight."],
+["By country","UK shareholder-centric, comply or explain. Germany two boards, half supervisory seats to employees. Japan keiretsu. China extensive state control."]]]]},
+
+{t:"Developing a Corporate Philosophy",p:"88–89",g:[
+["Mission and vision",[
+["Mission statement","Why the company exists and how it serves key stakeholders. Answers: what we provide, who our customers are, the benefit, what matters to us."],
+["Vision statement","Future-oriented aspiration: what do we aim to become? Should be ambitious, brief, expressive, unique."],
+["Mission, vision, strategy","Mission = who are we; vision = what do we want to become; strategy = how do we do it. Vision bridges mission and strategy."]]],
+["Values",[
+["Value statement","A company’s professed, enduring beliefs."],
+["Core values","Possessed, unique, essential. Cultural backbone, cannot be compromised."],
+["Permission-to-play values","Possessed but not unique or essential; bare minimum behavior standards."],
+["Accidental values","Possessed and unique, maybe essential; arise from employees’ personalities, not leadership. Can turn harmful (cliquishness)."],
+["Aspirational values","Not yet possessed, essential to future success."],
+["Choosing values","Ask: essential to long-term success? Relevant to the whole company? Helps future decisions? A small group of credible insiders picks them."],
+["Embedding values","Build them into interviewing, managing, and dismissing employees."]]]]},
+
+{t:"Modern Theories of Leadership",p:"90–93",g:[
+["Fundamentals",[
+["Leadership","Ability to influence others toward a common goal. Assigned (formal title) or emergent (natural influence)."],
+["Management","Administrative process that produces order and consistency."],
+["Positional vs. personal power","Authority from rank or status vs. from being likable, competent, respected, charismatic."],
+["Bases of power","Referent (liked, respected), expert, legitimate (formal authority), reward, coercive (fear, punishment)."],
+["Followership","Accepting a leader’s influence toward a common goal. Role-based view: effective followers think critically and are active; others are sheep, yes people, alienated, or pragmatists."],
+["LMX theory","Leader builds a unique exchange with each follower: in-group (expanded responsibilities) vs. out-group (formal roles). Leadership making moves followers through stranger, acquaintance, mature partnership."]]],
+["Styles",[
+["Servant leadership","Focus on serving others. Seven behaviors: followers first, help them grow, sensitivity, conceptualize strategy, empower, behave ethically, create community value."],
+["Trait approach","Intelligence, emotional intelligence, self-confidence, integrity. Five-factor model: openness, conscientiousness, extraversion, agreeableness, neuroticism."],
+["Situation-trait approach","Traits vary with context."],
+["Transactional","Rewards and corrective action; management-by-exception focuses on corrective criticism."],
+["Transformational","Motivates followers to question the status quo and exceed expectations. The Four I’s: idealized influence, inspirational motivation, intellectual stimulation, individualized consideration."],
+["Adaptive leadership","Helps followers adjust to change. Technical challenges have known solutions the leader can apply; adaptive challenges need followers to change values, roles, or approaches."],
+["Adaptive strategies","Get on the balcony, identify the adaptive challenge, regulate distress, maintain disciplined attention, give the work back, protect voices from below."],
+["Holding environment","A safe place to discuss problems while staying accountable for solutions."],
+["Authentic leadership","Grounded in a truthful self-concept. Self-awareness, transparency, morals and ethics, balanced processing."],
+["Authentic action wheel","Diagnoses underlying problems: existence, structure, resources, power, mission, meaning. Ask: what is really going on? What are we going to do about it?"]]]]},
+
+{t:"Business Ethics and Social Responsibility",p:"94–96",g:[
+["Ethics",[
+["Ethics vs. morals","Ethics: socially influenced norms guiding decisions in a context. Morals: personal philosophy of right and wrong."],
+["Corporate moral agency","Treating the corporation as an individual actor."],
+["Ethical culture and leadership","Supports ethical decisions; actions governed by code of conduct, values, and law. Codes often mention quality, service, respect, integrity."],
+["Unethical behavior","Insider trading, bribery, fraud. Not always illegal: favoritism, blind obedience, encouraging conformity."]]],
+["Decision frameworks",[
+["Consequentialist","Judge by consequences. Common good: benefits the community. Utilitarian: most good for most people, avoid harm."],
+["Non-consequentialist","Judge by intrinsic properties. Rights, virtue (character), justice (equals treated equally, unequals proportionately)."],
+["Practical approach","Ethical awareness first (is there an issue?), then weigh options and run a stakeholder analysis. Individual and organizational factors influence decisions."]]],
+["Social responsibility",[
+["Corporate social responsibility","How corporations address and are made aware of their impact on society."],
+["Shareholder theory","Maximize profit. Classical: profit over all. Moral minimum: profit while minimizing harm. Both stress obeying the law."],
+["Stakeholder theory","Stresses all stakeholders. Owed: employees fair treatment and living wage; customers safe products; suppliers prompt payment; investors transparency and fair return; community green policies."],
+["Social performance","How a firm treats people inside it, external social issues, and the environment."],
+["Self-reference criterion","Unconscious reference to your own cultural values in a business decision."],
+["Cultural relativism","Right and wrong vary by location."],
+["Global business principles","Rules ensuring ethical conduct across cultures: transparency, legal compliance, respect for human and property rights."]]]]},
+
+{t:"Talent Management",p:"97–98",g:[
+["Attract, retain, develop",[
+["Talent management (TM)","Integrated strategies and systems for hiring, developing, and retaining people. Whole-company effort, not one-size-fits-all."],
+["Employer brand","Reputation as an employer: values, culture, growth opportunities."],
+["Recruitment process","Cyclical: 1 set measurable objectives, 2 set strategy, 3 implement, 4 evaluate results (which feed the next cycle)."],
+["Retention","Keeping the most qualified, productive people: pay and benefits, growth, strong purpose, delivering on the employer brand. Purpose-driven companies have 40% higher retention."],
+["Talent review","High-level check that TM supports long-term strategy: trends in hiring, retention, development; what leaders are needed."],
+["Development","Training and support to grow skills and knowledge."],
+["GROW model","Goal (what do you want?), reality (where are you?), options (what could you do?), way forward (what will you do?)."],
+["Stretch assignment","Task beyond current skill level that builds skills useful to the company."],
+["Feedback loop","Set goals, clarify expectations, give feedback, evaluate results."],
+["Performance evaluations","Assess how performance and growth fit the business strategy; rewards should reinforce strategy-supporting behavior."]]]]}
+];
+var K={};try{K=JSON.parse(localStorage.getItem("lo-known")||"{}")}catch(e){}
+var main=document.getElementById("main"),nav=document.getElementById("nav");
+function save(){try{localStorage.setItem("lo-known",JSON.stringify(K))}catch(e){}}
+function build(){
+var h="",n="",tot=0,dn=0;
+D.forEach(function(s,i){
+var c=0,m=0,body="";
+s.g.forEach(function(g,j){
+var rows="";
+g[1].forEach(function(r,k){
+var id=i+"-"+j+"-"+k,d=K[id]?1:0;m++;c+=d;
+rows+='<div class="r'+(d?" done":"")+'" data-id="'+id+'" data-s="'+(r[0]+" "+r[1]).toLowerCase().replace(/"/g,"")+'"><b>'+r[0]+"</b><span>"+r[1]+'</span><label><input type="checkbox"'+(d?" checked":"")+"> know it</label></div>";
+});
+body+='<div class="g"><h3>'+g[0]+"</h3>"+rows+"</div>";
+});
+tot+=m;dn+=c;
+h+='<section id="s'+i+'"><h2>'+s.t+'</h2><p class="pg">Book pp. '+s.p+"</p>"+body+"</section>";
+n+='<a href="#s'+i+'"><span>'+s.t+"</span><small>"+c+"/"+m+"</small></a>";
+});
+main.innerHTML=h;nav.innerHTML=n;
+document.getElementById("prog").textContent=dn+" of "+tot+" known";
+}
+function scrollKeep(f){var y=window.scrollY;f();window.scrollTo(0,y)}
+main.addEventListener("click",function(e){
+var r=e.target.closest(".r");if(!r)return;
+if(e.target.type==="checkbox"){K[r.dataset.id]=e.target.checked?1:0;save();scrollKeep(function(){var q=document.getElementById("q").value;build();filter(q);if(document.getElementById("quiz").getAttribute("aria-pressed")==="true")main.classList.add("hide")});return}
+r.classList.toggle("show");
+});
+var qz=document.getElementById("quiz");
+qz.onclick=function(){var on=qz.getAttribute("aria-pressed")!=="true";qz.setAttribute("aria-pressed",on);main.classList.toggle("hide",on);if(!on)main.querySelectorAll(".show").forEach(function(x){x.classList.remove("show")})};
+document.getElementById("reset").onclick=function(){K={};save();build();filter(document.getElementById("q").value)};
+function filter(v){
+v=v.trim().toLowerCase();
+main.querySelectorAll(".r").forEach(function(r){r.style.display=!v||r.dataset.s.indexOf(v)>-1?"":"none"});
+main.querySelectorAll(".g").forEach(function(g){g.style.display=[].some.call(g.querySelectorAll(".r"),function(r){return r.style.display!=="none"})?"":"none"});
+main.querySelectorAll("section").forEach(function(s){s.style.display=[].some.call(s.querySelectorAll(".g"),function(g){return g.style.display!=="none"})?"":"none"});
+}
+document.getElementById("q").oninput=function(){filter(this.value)};
+build();
+</script>
+</body>
+</html>
